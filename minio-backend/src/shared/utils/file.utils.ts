@@ -1,7 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import { extname } from 'path';
-import { FILE_CONSTANTS } from '../../common/constants';
 import type { MimeType } from '../types';
+
+const FILE_CONSTANTS = {
+  MAX_FILE_SIZE: 10 * 1024 * 1024, 
+  ALLOWED_MIME_TYPES: ['image/jpeg', 'image/png', 'image/gif', 'application/pdf', 'text/plain'] as MimeType[]
+};
 
 export class FileUtils {
   static generateUniqueFileName(originalName: string): string {
