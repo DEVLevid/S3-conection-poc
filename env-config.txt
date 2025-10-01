@@ -1,0 +1,9 @@
+# Copie este conteúdo para um arquivo .env na pasta minio-backend
+MINIO_ENDPOINT=localhost
+MINIO_PORT=9000
+MINIO_ACCESS_KEY=MINIO_ADMIN
+MINIO_SECRET_KEY=MINIO_PASSWORD
+MINIO_BUCKET_NAME=poc-bucket
+MINIO_USE_SSL=false
+NODE_ENV=development
+PORT=3000
